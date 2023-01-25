@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+nav {
+    background-color: white;
+    height: 60px;
+    padding-top: 1rem;
+}
+
+main {
+    height: calc(100% - 70px);
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-title {
+    font-size: 3rem;
+}
+
+.nav-container {
+    font-family: 'Yeon Sung', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-contact {
+    font-size: 1.6rem;
+    border: 0;
+    cursor: pointer;
+    background: none;
+    font-family: inherit;
+} 
+
+.category-title {
+    font-size: 1.7rem;
+}
+
+.category-all {
+    width: 8rem;
+    height: 30px;
+    margin-left: 2rem;
+    border: none;
+    background: yellow;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 1.5rem;
+}
+.category-all:hover {
+    cursor: pointer;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    padding-top: 2rem;
+    width: 50%;
+    height: 5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.category-item:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.inner {
+    padding: 0 1.5rem;
+}
+
+@media all and (min-width: 1024px) {
+    .inner {
+        max-width: 1024px;
+        padding: 0 auto;
+    }
+}
+
+
+/* 카카오맵 css */
+body {
+    height: 100vh;
+}
+#map {
+    flex-grow: 1; /*나머지 공간을 모두 사용하겠다.*/
+    width: 100%;
+    height: 100%;
+}

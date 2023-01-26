@@ -1,4 +1,4 @@
-const { pool } = require("../../back/config/database");
+const { pool } = require("../../config/database");
 const { logger } = require("../../back/config/winston");
 const jwt = require("jsonwebtoken");
 const secret = require("../../back/config/secret");

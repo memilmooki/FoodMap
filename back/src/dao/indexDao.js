@@ -1,4 +1,4 @@
-const { pool } = require("../../back/config/database");
+const { pool } = require("../../config/database");
 
 exports.selectRestaurants = async function (connection, category) {
   const selectAllRestaurantsQuery = `SELECT title, address, category, videoUrl FROM Restaurants where status = 'A';`;

@@ -12,7 +12,7 @@ module.exports = function () {
   app.use(express.json()); // body값을 파싱
   app.use(express.urlencoded({ extended: true })); //form 으로 제출되는 값 파싱
   app.use(methodOverride()); // put, delete 요청 처리
-  app.use(cors({ credentials: true, origin: "http://3.219.14.215" })); // 웹브라우저 cors 설정을 관리
+  app.use(cors()); // 웹브라우저 cors 설정을 관리
   app.use(express.static("/home/ubuntu/FoodMap/front")); 
 
   // app.use(express.static("/home/ubuntu/food-map/front"))

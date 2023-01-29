@@ -1,7 +1,7 @@
 const { pool } = require("../../config/database");
-const { logger } = require("../../back/config/winston");
+const { logger } = require("../../config/winston");
 const jwt = require("jsonwebtoken");
-const secret = require("../../back/config/secret");
+const secret = require("../../config/secret");
 const indexDao = require("../dao/indexDao");
 
 // 식당 조회

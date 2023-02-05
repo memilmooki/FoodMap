@@ -15,7 +15,7 @@ module.exports = function () {
   app.use(cors()); // 웹브라우저 cors 설정을 관리
   app.use(express.static("/home/ubuntu/FoodMap/front")); 
 
-  // app.use(express.static("/home/ubuntu/food-map/front"))
+  // app.use(express.static("/home/ubuntu/FoodMap/front"))
   // app.use(express.static(process.cwd() + '/public'));
 
   /*직접 구현해야 하는 모듈 */
